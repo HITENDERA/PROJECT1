@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   display: flex;
+    color: rgb(54, 28, 123);
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+*{  
+    font-family: "Barlow Condensed", serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.menu a {
+    color: rgb(46, 10, 96);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+/* Close icon */
+.close-menu {
+    display: none;
+   
+}
+
+/* Header icons (Profile & Cart) */
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a {
+    color: rgb(238, 237, 242);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.header-icons a:hover {
+    color: #ccc;
+}
+.header-container{
+    background-color: #80DDFD;
+    width: 100%;
+    padding: 0;
+}
+.container-img{
+    background-image: url("https://drinkwildwonder.com/cdn/shop/files/desktop.jpg?v=1735942408&width=1920");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+  
+}
+.new-year-img img{
+    height: 200px;
+}
+.container-img h4{
+    color: #fff;
+    text-align: center;
+    font-size: 600;
+}
+.new-year-img{
+    width: 50%;
+}
+.top{
+    background-color: #2A317D;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+
+
+/* Dropdown icons */
+.dropdown i, .dropdown-content i {
+    margin-right: 8px;
+}
+.img-main{
+    height: 300px;
+}
+
+
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+.header .left{
+    width: 30%;
+}
+.header .right{
+    width: 35%;
+}
+.header .left ul , .header .right ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: #fff;
+    width: 100%;
+    font-size: 22px;
+    position: relative;
+    z-index: 9999;
+}
+.header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.under-shop{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    top: 0;
+    background: #c2eaf3;
+    padding: 90px 35px 50px 35px;
+}
+.left-shop ul li{
+    color: #2a317d;
+    font-weight: 500;
+    cursor: pointer;
+}
+.left-shop ul{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    font-size: 28px !important;
+}
+
+.left-shop ul button{
+    text-transform: uppercase;
+    background: #e21b79;
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.header .middle{
+    position: relative;
+    z-index: 99;
+}
+.header .right-shop{
+    width: 60%;
+}
+.header .right-shop .one{
+    padding: 20px;
+}
+.header .right-shop .one a{
+    max-width: 30%;
+}
+.header .right-shop .one div{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.header .right-shop .one#three div{
+    justify-content: start;
+    
+}
+.header .right-shop .one p{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #2a317d;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500!important;
+}
+.header .right-shop img{
+    width: 100%;
+    border-radius: 30px;
+}
